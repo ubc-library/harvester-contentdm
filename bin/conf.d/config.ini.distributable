@@ -1,0 +1,22 @@
+dmsystem='../dmscripts/DMSystem.php'
+dmimage='../dmscripts/DMImage.php'
+dmwebservices_url=
+cgi_bin_url=
+cgi_bin='/usr/local/Content6/Server/cgi-bin'
+ld_library_path='LD_LIBRARY_PATH=/usr/local/Content6/Server/lib:$PATH REQUEST_METHOD=GET QUERY_STRING='
+
+elasticsearch_service=
+thumbnail_height=
+thumbnail_width=
+tile_height=
+tile_width=
+tile_format=
+excerpt_width=
+excerpt_height=
+exceprt_highlight_height=
+cachedir=
+
+; database to store extracted data
+dsn=
+dbuser=
+dbpass=

@@ -1,0 +1,42 @@
+{
+    "name": "ubc-library/harvester-contentdm",
+    "description": "General Metadata Tools",
+    "version": "0.0.1",
+    "keywords": [
+        "doi",
+        "id",
+        "identifier",
+        "library",
+        "purl",
+        "resolver",
+        "handle"
+    ],
+    "homepage": "https://github.com/ubc-library/harvester-contentdm",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Khan-Kernahan",
+            "email": "stefan.khan-kernahan@ubc.ca",
+            "homepage": "http://skkit.com",
+            "role": "Creator/Developer"
+        }
+    ],
+    "support": {
+        "email": "stefan.khan-kernahan@ubc.ca",
+        "issues": "https://github.com/ubc-library/harvester-contentdm/issues",
+        "wiki": "https://github.com/ubc-library/harvester-contentdm/wiki",
+        "source": "https://github.com/ubc-library/harvester-contentdm"
+    },
+    "suggest": {
+        "monolog/monolog": "Allows more advanced logging of the application flow"
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UBC\\LSIT\\Harvester": "src/UBC/LSIT/Harvester",
+            "UBC\\LSIT\\Services": "src/UBC/LSIT/Services"
+        }
+    }
+}

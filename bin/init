@@ -1,0 +1,38 @@
+#!/bin/bash
+# Application   Init Deployment
+# Organization  The University of British Columbia
+# Author        Stefan Khan-Kernahan
+# Project       UBC Library Open Collections
+#
+# Purpose       The following script sets up the required files needed by the
+#               system to start the api
+
+###################################################################################
+curr_dir=${PWD##*/}
+
+composer_install_dir=vendor
+
+if [ "$curr_dir" == "bin" ]
+then
+    cd ./../.
+fi
+
+printf "Pulling from Git...\n"
+git pull
+
+
+curl -sS https://getcomposer.org/installer | php
+
+COMPOSER_HOME=/tmp/composer
+COMPOSER_CACHE_DIR=/tmp/composer/cache
+
+export COMPOSER_HOME
+export COMPOSER_CACHE_DIR
+
+printf "Composing...\n"
+
+php ./composer.phar update --no-dev -o
+
+printf "Done!\n"
+
+exit
